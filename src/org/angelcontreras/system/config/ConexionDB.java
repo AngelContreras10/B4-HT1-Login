@@ -31,10 +31,18 @@ public class ConexionDB {
             
     }
     
-    public ConexionDB getInstanciaConexionDB(){
+    public static ConexionDB getInstanciaConexionDB(){
         if(instanciaConexionDB == null)
             instanciaConexionDB = new ConexionDB();
         return instanciaConexionDB;
+    }
+
+    public Connection getConnection() {
+        return connection;
+    }
+
+    public void setConnection(Connection connection) {
+        this.connection = connection;
     }
     
     

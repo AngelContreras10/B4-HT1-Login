@@ -20,6 +20,27 @@ public class Users {
     public Users(){
         
     }
+    
+
+    public Users(String name, String lastname, String email, String user, String password, String id_user) {
+        this.name = name;
+        this.lastname = lastname;
+        this.email = email;
+        this.user = user;
+        this.password = password;
+        this.id_user = id_user;
+    }
+
+    public Users(String name, String lastname, String email, String user, String id_user) {
+        this.name = name;
+        this.lastname = lastname;
+        this.email = email;
+        this.user = user;
+        this.id_user = id_user;
+    }
+    
+    
+    
 
     public String getName() {
         return name;
